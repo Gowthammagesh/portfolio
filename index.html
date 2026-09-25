@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>M GOWTHAM — Web Developer | CSE Student</title>
+  <meta name="description" content="Portfolio of M Gowtham, a final-year Computer Science and Engineering student at IFET College of Engineering specializing in web development and software development." />
+  <meta name="keywords" content="M Gowtham, portfolio, web developer, CSE student, IFET College, frontend developer, Python, Java" />
+  <meta name="author" content="M Gowtham" />
+  <meta property="og:title" content="M Gowtham — Web Developer Portfolio" />
+  <meta property="og:description" content="Final-Year CSE Student | Web Developer — Building practical, modern technology solutions." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- Background effects -->
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-glow glow-1" aria-hidden="true"></div>
+  <div class="bg-glow glow-2" aria-hidden="true"></div>
+
+  <!-- Preloader -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-inner">
+      <span class="preloader-logo">MG</span>
+      <span class="preloader-bar"><i></i></span>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">
+        <span class="nav-logo-mark">&lt;/&gt;</span>
+        <span class="nav-logo-text">M<span class="accent">.</span>GOWTHAM</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navMenu">
+        <span class="hamburger"><span></span><span></span><span></span></span>
+      </button>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li class="nav-download">
+          <a href="assets/resume.pdf" class="btn btn-primary btn-sm" download="M_Gowtham_Resume.pdf">
+            <span class="btn-icon">&#8681;</span> Download Resume
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <!-- ===================== HOME ===================== -->
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <p class="hero-hello">&lt; hello_world /&gt;</p>
+          <h1 class="hero-title">
+            M <span class="accent">GOWTHAM</span>
+          </h1>
+          <p class="hero-sub">Final-Year Computer Science &amp; Engineering Student <span class="pipe">|</span> Web Developer</p>
+          <p class="hero-desc">
+            Computer Science and Engineering student passionate about web development, programming,
+            databases, and building practical technology solutions.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View My Projects</a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
+          </div>
+          <div class="hero-social">
+            <a class="social-link" href="https://www.linkedin.com/in/gowtham-m-5b0643322" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.55C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.72C24 .77 23.2 0 22.22 0z"/></svg>
+            </a>
+            <a class="social-link" href="https://github.com/Gowthammagesh" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 .3a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.33-1.76-1.33-1.76-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5 1 .1-.78.42-1.31.76-1.61-2.66-.3-5.46-1.33-5.46-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.11-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6.01 0c2.29-1.55 3.3-1.23 3.3-1.23.65 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.8 5.62-5.48 5.92.43.37.81 1.1.81 2.22v3.28c0 .32.22.7.83.58A12 12 0 0 0 12 .3z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="hero-avatar">
+            <div class="avatar-ring">
+              <img src="assets/profile.svg" alt="M Gowtham — profile illustration" />
+            </div>
+            <div class="code-chip chip-1">
+              <span class="dot"></span><code>const dev = "Gowtham";</code>
+            </div>
+            <div class="code-chip chip-2">
+              <span class="dot dot-green"></span><code>&lt;role&gt; Web Developer</code>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#about" class="hero-scroll" aria-label="Scroll to About">
+        <span class="mouse"><span class="wheel"></span></span>
+        <span class="scroll-text">scroll</span>
+      </a>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">// about_me</span>
+          <h2 class="section-title">About <span class="accent">Me</span></h2>
+          <p class="section-subtitle">A quick look at who I am and what I care about.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-visual reveal">
+            <div class="terminal">
+              <div class="terminal-bar">
+                <span class="t-dot red"></span><span class="t-dot yellow"></span><span class="t-dot green"></span>
+                <span class="terminal-title">developer.py</span>
+              </div>
+              <div class="terminal-body">
+<pre><code><span class="tok-cmt"># whoami</span>
+<span class="tok-kw">class</span> <span class="tok-name">Developer</span>:
+    name = <span class="tok-str">"M Gowtham"</span>
+    degree = <span class="tok-str">"B.E. CSE (Final Year)"</span>
+    college = <span class="tok-str">"IFET College of Engineering"</span>
+    focus = [<span class="tok-str">"Web Dev"</span>, <span class="tok-str">"Software Dev"</span>]
+
+    <span class="tok-kw">def</span> <span class="tok-fn">build</span>(self, idea):
+        <span class="tok-kw">return</span> <span class="tok-str">"practical solutions"</span></code></pre>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-content reveal">
+            <h3>Turning ideas into <span class="accent">practical technology</span></h3>
+            <p>
+              I'm a final-year Computer Science and Engineering student at
+              <strong>IFET College of Engineering</strong>, focused on web development and software development.
+              I enjoy solving real-world problems through clean, user-friendly technology.
+            </p>
+            <ul class="about-list">
+              <li><span class="check">&#10003;</span> Building modern websites and web applications</li>
+              <li><span class="check">&#10003;</span> Comfortable with Python, Java, HTML, CSS and databases</li>
+              <li><span class="check">&#10003;</span> Experience through internships and project development</li>
+              <li><span class="check">&#10003;</span> Interested in practical and innovative technology solutions</li>
+            </ul>
+            <div class="about-stats">
+              <div class="stat">
+                <span class="stat-num">2+</span>
+                <span class="stat-label">Internships</span>
+              </div>
+              <div class="stat">
+                <span class="stat-num">2</span>
+                <span class="stat-label">Key Projects</span>
+              </div>
+              <div class="stat">
+                <span class="stat-num">5+</span>
+                <span class="stat-label">Technologies</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== EDUCATION ===================== -->
+    <section class="section section-alt" id="education">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">// education</span>
+          <h2 class="section-title">My <span class="accent">Education</span></h2>
+        </div>
+
+        <div class="edu-timeline reveal">
+          <div class="edu-line" aria-hidden="true"></div>
+          <div class="edu-card glass">
+            <div class="edu-icon">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/><path d="M22 10v6"/></svg>
+            </div>
+            <div class="edu-body">
+              <span class="edu-badge">Current</span>
+              <h3>IFET College of Engineering</h3>
+              <p class="edu-degree">
+                Bachelor of Engineering / Bachelor of Technology in
+                Computer Science and Engineering
+              </p>
+              <p class="edu-status"><span class="dot"></span> Status: Final Year</p>
+              <p class="edu-year-hint">Graduation year — to be updated</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SKILLS ===================== -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">// skills</span>
+          <h2 class="section-title">Technical <span class="accent">Skills</span></h2>
+          <p class="section-subtitle">Technologies I work with regularly.</p>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-category reveal">
+            <h3 class="skill-cat-title"><span class="cat-icon">&#123;</span> Programming</h3>
+            <div class="skill-list">
+              <div class="skill-card glass">
+                <span class="skill-icon py">Py</span>
+                <div><span class="skill-name">Python</span><span class="skill-desc">Scripting, logic building &amp; applications</span></div>
+              </div>
+              <div class="skill-card glass">
+                <span class="skill-icon java">Jv</span>
+                <div><span class="skill-name">Java</span><span class="skill-desc">Object-oriented programming</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-category reveal">
+            <h3 class="skill-cat-title"><span class="cat-icon">&lt;/&gt;</span> Web Development</h3>
+            <div class="skill-list">
+              <div class="skill-card glass">
+                <span class="skill-icon html">&#60;&#47;&#62;</span>
+                <div><span class="skill-name">HTML</span><span class="skill-desc">Semantic, accessible markup</span></div>
+              </div>
+              <div class="skill-card glass">
+                <span class="skill-icon css">#</span>
+                <div><span class="skill-name">CSS</span><span class="skill-desc">Responsive, modern styling</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-category reveal">
+            <h3 class="skill-cat-title"><span class="cat-icon">DB</span> Database</h3>
+            <div class="skill-list">
+              <div class="skill-card glass">
+                <span class="skill-icon db">&#9681;</span>
+                <div><span class="skill-name">Database Technologies</span><span class="skill-desc">Data storage &amp; management</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== EXPERIENCE ===================== -->
+    <section class="section section-alt" id="experience">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">// experience</span>
+          <h2 class="section-title">Work <span class="accent">Experience</span></h2>
+        </div>
+
+        <div class="exp-timeline">
+          <div class="exp-item reveal">
+            <div class="exp-marker">
+              <span class="exp-dot"></span>
+            </div>
+            <div class="exp-card glass">
+              <div class="exp-top">
+                <span class="exp-badge">2026</span>
+                <span class="exp-company">Cloud Logic Technologies</span>
+              </div>
+              <h3>Web Development Intern / Trainee <span class="exp-date">— Feb 2026</span></h3>
+              <p>
+                Gained practical experience in web development and worked on creating websites,
+                developing hands-on knowledge of website development processes.
+              </p>
+              <div class="exp-tags">
+                <span class="tag">Web Development</span><span class="tag">Website Building</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="exp-item reveal">
+            <div class="exp-marker">
+              <span class="exp-dot"></span>
+            </div>
+            <div class="exp-card glass">
+              <div class="exp-top">
+                <span class="exp-badge">2025</span>
+                <span class="exp-company">Pinnacle ABS</span>
+              </div>
+              <h3>Web Development Intern / Trainee <span class="exp-date">— Feb 2025</span></h3>
+              <p>
+                Worked on website development tasks as part of company assignments and gained
+                practical exposure to building web-based solutions.
+              </p>
+              <div class="exp-tags">
+                <span class="tag">Web Development</span><span class="tag">Web-based Solutions</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROJECTS ===================== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">// projects</span>
+          <h2 class="section-title">Featured <span class="accent">Projects</span></h2>
+          <p class="section-subtitle">Selected work that shows what I love to build.</p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <article class="project-card reveal glass">
+            <div class="project-visual viz-energy">
+              <svg viewBox="0 0 400 220" width="100%" height="220" aria-hidden="true" role="img">
+                <defs>
+                  <linearGradient id="gEnergy" x1="0" y1="0" x2="1" y2="0">
+                    <stop offset="0" stop-color="#22d3ee"/><stop offset="1" stop-color="#8b5cf6"/>
+                  </linearGradient>
+                </defs>
+                <rect x="0" y="0" width="400" height="220" fill="#0b1020" rx="14"/>
+                <path d="M0 170 Q 50 160 100 170 T 200 170 T 300 170 T 400 170" fill="none" stroke="#1e3a5f" stroke-width="3" opacity=".6"/>
+                <path d="M0 150 Q 50 135 100 150 T 200 150 T 300 150 T 400 150" fill="none" stroke="#155e75" stroke-width="3" opacity=".8" class="wave-2"/>
+                <circle cx="150" cy="105" r="40" fill="none" stroke="url(#gEnergy)" stroke-width="2.5" class="pulse-ring"/>
+                <circle cx="150" cy="150" r="8" fill="#22d3ee" class="pulse-dot"/>
+                <path d="M150 145 L166 118 L158 118 L170 90 L134 118 L142 118 L128 145 Z" fill="url(#gEnergy)"/>
+                <text x="250" y="105" fill="#67e8f9" font-family="JetBrains Mono, monospace" font-size="13">vibration</text>
+                <text x="250" y="125" fill="#94a3b8" font-family="JetBrains Mono, monospace" font-size="13">&#8595;</text>
+                <text x="250" y="145" fill="#a5b4fc" font-family="JetBrains Mono, monospace" font-size="13">~ power ~</text>
+              </svg>
+              <span class="project-cat">Hardware / Energy Technology</span>
+            </div>
+            <div class="project-body">
+              <h3>Piezoelectric Power Generator</h3>
+              <p>
+                A hardware-oriented project based on piezoelectric technology for generating electrical
+                power from mechanical pressure or vibrations.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Hardware</span><span class="tag">Energy</span><span class="tag">Piezoelectric</span>
+              </div>
+              <div class="project-actions">
+                <a href="#contact" class="btn btn-mini btn-outline">View Project</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card reveal glass">
+            <div class="project-visual viz-block">
+              <svg viewBox="0 0 400 220" width="100%" height="220" aria-hidden="true" role="img">
+                <defs>
+                  <linearGradient id="gBlock" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0" stop-color="#38bdf8"/><stop offset="1" stop-color="#7c3aed"/>
+                  </linearGradient>
+                </defs>
+                <rect x="0" y="0" width="400" height="220" fill="#0b1020" rx="14"/>
+                <g class="block-chain">
+                  <rect x="140" y="40" width="46" height="46" rx="8" fill="none" stroke="url(#gBlock)" stroke-width="2.5" class="block-1"/>
+                  <text x="163" y="67" text-anchor="middle" fill="#7dd3fc" font-family="JetBrains Mono, monospace" font-size="14">A</text>
+                  <rect x="205" y="55" width="46" height="46" rx="8" fill="none" stroke="url(#gBlock)" stroke-width="2.5" opacity=".85" class="block-2"/>
+                  <text x="228" y="82" text-anchor="middle" fill="#7dd3fc" font-family="JetBrains Mono, monospace" font-size="14">B</text>
+                  <rect x="270" y="70" width="46" height="46" rx="8" fill="none" stroke="url(#gBlock)" stroke-width="2.5" opacity=".7" class="block-3"/>
+                  <text x="293" y="97" text-anchor="middle" fill="#7dd3fc" font-family="JetBrains Mono, monospace" font-size="14">C</text>
+                </g>
+                <g class="cert">
+                  <rect x="60" y="120" width="70" height="58" rx="6" fill="none" stroke="#38bdf8" stroke-width="2"/>
+                  <text x="95" y="143" text-anchor="middle" fill="#7dd3fc" font-family="JetBrains Mono, monospace" font-size="13">CERT</text>
+                  <path d="M95 155 l6 6 l10 -10" fill="none" stroke="#34d399" stroke-width="2.5"/>
+                </g>
+                <text x="250" y="145" fill="#a5b4fc" font-family="JetBrains Mono, monospace" font-size="12">verification &#8594;</text>
+                <text x="250" y="165" fill="#38bdf8" font-family="JetBrains Mono, monospace" font-size="12">tamper-resistant</text>
+              </svg>
+              <span class="project-cat">Software / Blockchain</span>
+            </div>
+            <div class="project-body">
+              <h3>Blockchain-Based Certification Verification System</h3>
+              <p>
+                A software system designed to improve certificate verification using blockchain technology,
+                providing a more reliable and tamper-resistant approach to verifying certification records.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Blockchain</span><span class="tag">Verification</span><span class="tag">Software</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/Gowthammagesh" target="_blank" rel="noopener" class="btn btn-mini btn-outline">
+                  <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M12 .3a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.33-1.76-1.33-1.76-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5 1 .1-.78.42-1.31.76-1.61-2.66-.3-5.46-1.33-5.46-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.11-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6.01 0c2.29-1.55 3.3-1.23 3.3-1.23.65 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.8 5.62-5.48 5.92.43.37.81 1.1.81 2.22v3.28c0 .32.22.7.83.58A12 12 0 0 0 12 .3z"/></svg>
+                  GitHub
+                </a>
+                <a href="#contact" class="btn btn-mini btn-outline">View Project</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SERVICES ===================== -->
+    <section class="section section-alt" id="services">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">// services</span>
+          <h2 class="section-title">What I <span class="accent">Offer</span></h2>
+          <p class="section-subtitle">Areas of service and interest — focused on modern web development.</p>
+        </div>
+
+        <div class="services-grid">
+          <div class="service-card glass reveal">
+            <div class="service-icon">&lt;/&gt;</div>
+            <h3>Responsive Website Development</h3>
+            <p>Modern, user-friendly websites that look great on desktop, tablet, and mobile.</p>
+          </div>
+          <div class="service-card glass reveal">
+            <div class="service-icon">&#128396;</div>
+            <h3>Website Design &amp; Development</h3>
+            <p>Clean layouts, strong typography, and intuitive design built with care.</p>
+          </div>
+          <div class="service-card glass reveal">
+            <div class="service-icon">&#123; }</div>
+            <h3>Front-End Development</h3>
+            <p>Interactive interfaces using HTML, CSS, and modern web practices.</p>
+          </div>
+          <div class="service-card glass reveal">
+            <div class="service-icon">DB</div>
+            <h3>Database-Integrated Websites</h3>
+            <p>Websites backed by databases for storing and managing data effectively.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">// contact</span>
+          <h2 class="section-title">Let's Build Something <span class="accent">Together.</span></h2>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <h3>Get in touch</h3>
+            <p>Have a project in mind, an opportunity, or just want to say hi? I'd love to hear from you.</p>
+
+            <ul class="contact-list">
+              <li>
+                <span class="contact-icon">&#9993;</span>
+                <div><span class="contact-label">Email</span><a href="mailto:gowthamgowtham5081@gmail.com">gowthamgowtham5081@gmail.com</a></div>
+              </li>
+              <li>
+                <span class="contact-icon">&#9742;</span>
+                <div><span class="contact-label">Phone</span><a href="tel:+916379107465">+91 63791 07465</a></div>
+              </li>
+              <li>
+                <span class="contact-icon">&#9873;</span>
+                <div><span class="contact-label">Location</span><span>Panruti, Cuddalore District, Tamil Nadu, India</span></div>
+              </li>
+            </ul>
+
+            <div class="contact-social">
+              <a class="social-link" href="https://www.linkedin.com/in/gowtham-m-5b0643322" target="_blank" rel="noopener" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" width="19" height="19" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.55C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.72C24 .77 23.2 0 22.22 0z"/></svg>
+              </a>
+              <a class="social-link" href="https://github.com/Gowthammagesh" target="_blank" rel="noopener" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" width="19" height="19" fill="currentColor" aria-hidden="true"><path d="M12 .3a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.33-1.76-1.33-1.76-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5 1 .1-.78.42-1.31.76-1.61-2.66-.3-5.46-1.33-5.46-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.11-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6.01 0c2.29-1.55 3.3-1.23 3.3-1.23.65 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.8 5.62-5.48 5.92.43.37.81 1.1.81 2.22v3.28c0 .32.22.7.83.58A12 12 0 0 0 12 .3z"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <form class="contact-form glass reveal" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" autocomplete="name" required />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Project inquiry" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block" id="sendBtn">
+              <span class="btn-msg" id="btnMsg">Send Message &#10148;</span>
+            </button>
+            <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#home" class="nav-logo">
+          <span class="nav-logo-mark">&lt;/&gt;</span>
+          <span class="nav-logo-text">M<span class="accent">.</span>GOWTHAM</span>
+        </a>
+        <p>Final-Year CSE Student | Web Developer</p>
+      </div>
+      <div class="footer-social">
+        <a class="social-link" href="https://www.linkedin.com/in/gowtham-m-5b0643322" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+        <a class="social-link" href="https://github.com/Gowthammagesh" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+        <a class="social-link" href="mailto:gowthamgowtham5081@gmail.com" aria-label="Email">Email</a>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="#home">Home</a><a href="#about">About</a><a href="#education">Education</a>
+        <a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#projects">Projects</a>
+        <a href="#services">Services</a><a href="#contact">Contact</a>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> M Gowtham. Crafted with <span class="heart">&hearts;</span> and code.</p>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
