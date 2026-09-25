@@ -187,6 +187,41 @@
     });
   }
 
+  /* ---------- Lightbox (certificates) ---------- */
+  var lightbox = doc.getElementById("lightbox");
+  var lightboxImg = doc.getElementById("lightboxImg");
+  var lightboxClose = doc.getElementById("lightboxClose");
+  var lightboxDownload = doc.getElementById("lightboxDownload");
+
+  function openLightbox(src, alt, downloadName) {
+    lightboxImg.src = src;
+    lightboxImg.alt = alt || "Certificate preview";
+    lightboxDownload.href = src;
+    lightboxDownload.setAttribute("download", downloadName || "");
+    lightbox.classList.add("open");
+    doc.body.style.overflow = "hidden";
+  }
+  function closeLightbox() {
+    lightbox.classList.remove("open");
+    doc.body.style.overflow = "";
+  }
+
+  doc.querySelectorAll(".cert-img-btn").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var img = btn.querySelector("img");
+      openLightbox(btn.getAttribute("data-cert"), img.alt, /[^/]+$/.exec(btn.getAttribute("data-cert"))[0]);
+    });
+  });
+  if (lightboxClose) lightboxClose.addEventListener("click", closeLightbox);
+  if (lightbox) {
+    lightbox.addEventListener("click", function (e) {
+      if (e.target === lightbox) closeLightbox();
+    });
+    doc.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") closeLightbox();
+    });
+  }
+
   /* ---------- Footer year ---------- */
   var yearEl = doc.getElementById("year");
   if (yearEl) yearEl.textContent = new Date().getFullYear();
