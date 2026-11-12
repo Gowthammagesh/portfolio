@@ -502,10 +502,11 @@ ul { list-style: none; }
 /* ---------- About ---------- */
 .about-grid {
   display: grid;
-  grid-template-columns: 0.9fr 1.1fr;
+  grid-template-columns: 1fr;
   gap: 40px;
   align-items: center;
 }
+.about-content { max-width: 880px; margin: 0 auto; }
 
 .terminal {
   background: #0a0f1e;
